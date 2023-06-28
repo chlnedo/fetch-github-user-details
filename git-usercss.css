@@ -1,0 +1,226 @@
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+  }
+
+  body {
+    background-color: var(--lm-bg);
+    font-size: 13px;
+    color: var(--lm-text);
+    width: 100%;
+    position: relative;
+    height: 100vh;
+  }
+
+  .wrappper{
+    width: 327px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  #app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .headerr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btn-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    letter-spacing: 2.5px;
+    color: var(--lm-text);
+    font-weight: bold;
+  }
+
+  .btn-mode:hover {
+    cursor: pointer;
+  }
+
+  .search-container {
+    position: relative;
+    background-color: var(--lm-bg-content);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    display: flex;
+    height: 100%;
+    padding: 6px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-position-y: center;
+    background-size: 20px;
+  } 
+
+  .searchbar-container {
+    border: none;
+    width: 80%;
+    outline: none;
+    background: none;
+    color: var(--lm-text);
+    padding-left: 50px;
+  }
+  
+  .searchbar-container::placeholder {
+    color: var(--lm-text);
+    letter-spacing: -0.5px;
+    font-size: 13px;
+  }
+
+  .search-container img {
+    height: 20px;
+    width: 20px;
+    padding: 0 10px 0px 16px;
+  }
+
+  .btn {
+    min-width: 84px;
+    padding: 16px 20px;
+    background-color: var(--btn);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover);
+  }
+
+  .btn:active {
+    transform: scale(0.975);
+  }
+
+  .main-card {
+    background-color: var(--lm-bg-content);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    padding: 24px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-evenly;
+  }
+
+ 
+  .pic-wala-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+
+ 
+  
+  .image-de {
+    width: 70px;
+    border-radius: 90px;
+  }
+
+  .pic-wala-section h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--lm-text-alt);
+  }
+
+
+  
+  #user {
+    color: var(--btn);
+  }
+
+  .profile-info-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #bio {
+    line-height: 25px;
+    opacity: 0.75;
+  }
+
+  .repos-wala-section{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lm-bg);
+    text-align: center;
+    border-radius: 10px;
+    padding: 18px;
+  }
+
+  .links {
+    display: flex;
+   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px 0;
+  }
+
+  .profile-info {
+    width: 50%;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-icons {
+    width: 18px;
+    filter: var(--lm-icon-bg);
+  }
+
+  .profile-info h4 {
+    overflow-wrap: break-word;
+  }
+  
+  .profile-info a {
+    color: var(--lm-text);
+    word-break: break-all;
+  }
+
+  .erorr {
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    right: 10px;
+    top: -25px;
+  }
+
+
+ 
