@@ -1,4 +1,15 @@
 # fetch-github-user-details
+get insight for any github user:
+
+  #Public Repos
+  
+  #Followers
+  
+  #Following
+  
+  #Profile
+  
+  #Dark-Light theme
 
 
 # screen-shot
